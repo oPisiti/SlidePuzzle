@@ -21,7 +21,7 @@ function preload() {
 function setup(){
   createCanvas(canvasSize.x, canvasSize.y);
 
-  // Correspondance between tile number and initial position on image to draw
+  // Correspondence between tile number and initial position on image to draw
   for(let i = 0; i < tileDivisions.y; i++){
     tilePosition[i] = [];
     for(let j = 0; j < tileDivisions.x; j++){
@@ -29,7 +29,7 @@ function setup(){
     }
   }
 
-  // Setting up one blanck tile - for movement
+  // Setting up one blank tile - for movement
   tilePosition[tileDivisions.y - 1][tileDivisions.x - 1] = {x: null, y: null};
 
   // Scrambling the tiles n times
@@ -65,7 +65,7 @@ function mouseClicked() {
     for(let j = 0; j < tileDivisions.x; j++){ 
       let dest = {x: j*tileSize.x, y: i*tileSize.y};
 
-      // Colision
+      // Collision
       if(mouseX >= dest.x && mouseX < (dest.x + tileSize.x) && mouseY >= dest.y && mouseY < (dest.y + tileSize.y)){
 
         // If null on left
@@ -144,8 +144,7 @@ function scrambleTiles(tilePos, n = 1){
       }
     }
 
-    // scrambling
-  
+    // scrambling  
     let chosen = random(moveOptions);
     swapNull(chosen.tileI, chosen.tileJ, nullPos.nullI, nullPos.nullJ);
   }
