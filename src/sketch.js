@@ -1,3 +1,6 @@
+// Author:  Lauro França @oPisiti
+// Created: 2023
+
 // Canvas
 let canvasSize = {x:800, y:800};
 let nullColor = (25, 25, 25);

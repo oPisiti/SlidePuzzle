@@ -11,3 +11,12 @@ python -m http.server
 ```
  
 In a browser, go to http://localhost:8000/
+
+
+# P5js library
+
+This project uses the p5js library.
+
+Thank you to all the contributors.
+
+For the latest release, go to https://p5js.org/download/
